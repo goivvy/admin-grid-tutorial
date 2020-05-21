@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+ <type name="Dev\Grid\Ui\DataProvider\Category\ListingDataProvider">
+   <plugin name="dev_grid_attributes" type="Dev\Grid\Plugin\AddAttributesToUiDataProvider"/> 
+ </type>
+ <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+  <arguments>
+   <argument name="collections" xsi:type="array">
+     <item name="dev_grid_category_listing_data_source" xsi:type="string">DevGridCategoryCollection</item> 
+   </argument> 
+  </arguments> 
+ </type>
+ <virtualType name="DevGridCategoryCollection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+   <arguments>
+     <argument name="mainTable" xsi:type="string">catalog_category_entity</argument>
+     <argument name="resourceModel" xsi:type="string">Dev\Grid\Model\ResourceModel\Category</argument> 
+   </arguments> 
+ </virtualType>
+</config>

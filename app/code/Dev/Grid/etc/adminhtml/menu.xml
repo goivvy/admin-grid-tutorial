@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dev_Grid::home" title="Category Listing" module="Dev_Grid" sortOrder="1000" parent="Magento_Backend::marketing" resource="Magento_Catalog::categories" action="dev_grid/index/index"/>
+    </menu>
+</config>
