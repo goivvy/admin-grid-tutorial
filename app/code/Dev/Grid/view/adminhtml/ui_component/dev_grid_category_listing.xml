@@ -19,8 +19,8 @@
    <argument name="dataProvider" xsi:type="configurableObject">
        <argument name="class" xsi:type="string">Dev\Grid\Ui\DataProvider\Category\ListingDataProvider</argument>
        <argument name="name" xsi:type="string">dev_grid_category_listing_data_source</argument>
-       <argument name="primaryFieldName" xsi:type="string">id</argument>
-       <argument name="requestFieldName" xsi:type="string">id</argument>
+       <argument name="primaryFieldName" xsi:type="string">entity_id</argument>
+       <argument name="requestFieldName" xsi:type="string">entity_id</argument>
        <argument name="data" xsi:type="array">
          <item name="config" xsi:type="array">
            <item name="update_url" xsi:type="url" path="mui/index/render"/> 
@@ -42,7 +42,7 @@
            <item name="selectProvider" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing.dev_grid_category_columns.ids</item>		    
            <item name="displayArea" xsi:type="string">bottom</item>
            <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
-           <item name="indexField" xsi:type="string">id</item>
+           <item name="indexField" xsi:type="string">entity_id</item>
         </item> 
       </argument> 
       <action name="delete">
