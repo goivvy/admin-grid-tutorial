@@ -21,6 +21,10 @@ class Index extends \Magento\Backend\App\Action
 
     public function execute()
     {
-        return $this->pageFactory->create();
+        $resultPage = $this->pageFactory->create();
+        $resultPage->setActiveMenu('Magento_Catalog::catalog_products');
+        $resultPage->getConfig()->getTitle()->prepend(__('Admin Grid Tutorial Example'));
+
+        return $resultPage;
     }
 }
