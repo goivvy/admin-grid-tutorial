@@ -95,12 +95,12 @@
     <column name="path">
       <settings>
          <filter>text</filter>
+         <bodyTmpl>ui/grid/cells/text</bodyTmpl>
          <label translate="true">Path</label> 
       </settings> 
     </column>
     <column name="name">
       <settings>
-         <filter>text</filter>
          <label translate="true">Name</label> 
       </settings> 
     </column>
