@@ -87,7 +87,7 @@
       <argument name="data" xsi:type="array">
          <item name="config" xsi:type="array">
             <item name="filter" xsi:type="string">textRange</item>
-            <item name="label" xsi:type="string" translate="true">Entity ID</item>
+            <item name="label" xsi:type="string" translate="true">ID</item>
             <item name="resizeDefaultWidth" xsi:type="string">25</item> 
          </item> 
       </argument> 
@@ -101,6 +101,8 @@
     </column>
     <column name="name">
       <settings>
+         <filter>text</filter>
+         <bodyTmpl>ui/grid/cells/text</bodyTmpl>
          <label translate="true">Name</label> 
       </settings> 
     </column>

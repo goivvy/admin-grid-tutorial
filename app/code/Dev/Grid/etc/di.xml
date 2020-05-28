@@ -10,7 +10,7 @@
    </argument> 
   </arguments> 
  </type>
- <virtualType name="DevGridCategoryCollection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+ <virtualType name="DevGridCategoryCollection" type="Dev\Grid\Ui\DataProvider\Category\Listing\Collection">
    <arguments>
      <argument name="mainTable" xsi:type="string">catalog_category_entity</argument>
      <argument name="resourceModel" xsi:type="string">Dev\Grid\Model\ResourceModel\Category</argument> 
