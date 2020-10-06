@@ -84,13 +84,11 @@
        </argument>
     </selectionsColumn>
     <column name="entity_id">
-      <argument name="data" xsi:type="array">
-         <item name="config" xsi:type="array">
-            <item name="filter" xsi:type="string">textRange</item>
-            <item name="label" xsi:type="string" translate="true">ID</item>
-            <item name="resizeDefaultWidth" xsi:type="string">25</item> 
-         </item> 
-      </argument> 
+      <settings>
+         <filter>textRange</filter>
+         <label translate="true">ID</label>
+         <resizeDefaultWidth>25</resizeDefaultWidth>
+      </settings> 
     </column> 
     <column name="path">
       <settings>
